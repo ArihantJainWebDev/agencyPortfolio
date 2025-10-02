@@ -1,14 +1,14 @@
 export const navItems = [
-  { name: "About", link: "#about" },
+  { name: "Services", link: "#services" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Team", link: "#team" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "We prioritize client collaboration, fostering open communication",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "We're very flexible with time zone communications",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -28,8 +28,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Our tech stack",
+    description: "We constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Tech enthusiasts with a passion for development.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building innovative solutions",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,99 +72,99 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "E-commerce Platform Redesign",
+    des: "Complete overhaul of a major retail platform resulting in 40% increase in conversions.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "/ui.retailpro.com",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Healthcare Management System",
+    des: "Secure patient management system with telemedicine capabilities for healthcare providers.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "/ui.healthsys.com",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "FinTech Mobile Application",
+    des: "Banking application with advanced security features and real-time transaction monitoring.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "/ui.fintechapp.com",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Real Estate Virtual Tours",
+    des: "Immersive 3D property tour platform using cutting-edge WebGL technology.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "/ui.realestate3d.com",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "BizverseLabs transformed our digital presence completely. Their strategic approach and technical expertise delivered results beyond our expectations. The team was professional, responsive, and truly understood our business needs.",
+    name: "Sarah Johnson",
+    title: "CEO, RetailPro Inc.",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with BizverseLabs was a game-changer for our healthcare organization. They delivered a secure, compliant solution that our patients love. Their attention to detail and industry knowledge is impressive.",
+    name: "Michael Chen",
+    title: "CTO, HealthFirst Systems",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The fintech app developed by BizverseLabs has revolutionized how our customers bank with us. The user experience is exceptional, and the security features give our clients peace of mind.",
+    name: "David Rodriguez",
+    title: "Product Director, FinanceGlobal",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "BizverseLabs brought our vision for virtual property tours to life. The immersive experience they created has significantly increased our client engagement and sales conversions.",
+    name: "Jennifer Williams",
+    title: "Marketing Director, Prime Estates",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "As a technology partner, BizverseLabs has consistently exceeded our expectations. Their innovative solutions and commitment to quality make them an invaluable part of our success.",
+    name: "Robert Thompson",
+    title: "VP Technology, InnovateCorp",
   },
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
+    name: "RetailPro",
     img: "/cloud.svg",
     nameImg: "/cloudName.svg",
   },
   {
     id: 2,
-    name: "appwrite",
+    name: "HealthFirst",
     img: "/app.svg",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
+    name: "FinanceGlobal",
     img: "/host.svg",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
-    name: "stream",
+    name: "PrimeEstates",
     img: "/s.svg",
     nameImg: "/streamName.svg",
   },
   {
     id: 5,
-    name: "docker.",
+    name: "InnovateCorp",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
   },
@@ -173,29 +173,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Founding & Company Formation",
+    desc: "Established BizverseLabs with a vision to provide cutting-edge digital solutions to businesses worldwide.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Team Expansion",
+    desc: "Grew from a solo operation to a diverse team of 15+ specialists in design, development, and strategy.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Major Client Wins",
+    desc: "Secured partnerships with Fortune 500 companies and established a strong portfolio of successful projects.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Industry Recognition",
+    desc: "Awarded Top Digital Agency 2024 and recognized for innovation in web and mobile application development.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

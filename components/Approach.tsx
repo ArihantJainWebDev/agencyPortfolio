@@ -7,17 +7,16 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        Our <span className="text-purple">process</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
+          title="Discovery & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="We collaborate with you to understand your business goals, target audience, 
+          and project requirements. We develop a comprehensive strategy and project roadmap."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,11 +25,10 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Design & Development"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="Our team creates stunning designs and robust code. We follow agile methodologies,
+          providing regular updates and incorporating your feedback throughout the process."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -48,11 +46,10 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Launch & Growth"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="We deploy your solution and provide comprehensive testing. Our team continues to
+          monitor performance and provides ongoing support to ensure your success."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -147,10 +144,10 @@ const Card = ({
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
-      {/* this btn is from https://ui.aceternity.com/components/tailwindcss-buttons border magic */}
-      {/* change rounded-lg, text-purple px-5 py-2 */}
-      {/* remove focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 cuz we don't need to focus */}
-      {/* remove text-sm font-medium h-12 , add font-bold text-2xl */}
+      {/* this btn is from https://ui.aceternity.com/components/tailwindcss-buttons border magic */};
+      {/* change rounded-lg, text-purple px-5 py-2 */};
+      {/* remove focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 cuz we don't need to focus */};
+      {/* remove text-sm font-medium h-12 , add font-bold text-2xl */};
       <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
         <span
           className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]

@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+// Also install this npm i --save-dev @types/lottie-react
+import dynamic from "next/dynamic";
 
 import { cn } from "@/lib/utils";
 
@@ -11,6 +11,12 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+
+// Dynamically import Lottie to avoid SSR issues
+const Lottie = dynamic(() => import("lottie-react"), { 
+  ssr: false,
+  loading: () => <p>Loading...</p>
+});
 
 export const BentoGrid = ({
   className,
@@ -56,20 +62,21 @@ export const BentoGridItem = ({
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleCopy = () => {
     const text = "hsu@jsmastery.pro";
     navigator.clipboard.writeText(text);
     setCopied(true);
+    
+    // Reset copied state after animation completes
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
   };
 
   return (
@@ -180,7 +187,16 @@ export const BentoGridItem = ({
                   }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                {isClient && (
+                  <div className="pointer-events-none">
+                    <Lottie 
+                      animationData={animationData}
+                      loop={copied}
+                      autoplay={copied}
+                      style={{ height: 200, width: 400 }}
+                    />
+                  </div>
+                )}
               </div>
 
               <MagicButton
